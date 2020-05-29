@@ -1,0 +1,50 @@
+/************************ Blog Section **********************/
+.blog {
+    background:#f1f1f1;
+}
+
+.blog-item {
+    width:30%;
+    background:#fff;
+}
+
+.blog-item.marg {
+    margin:0 5%
+}
+
+.blog-info {
+    padding:15px 35px 20px 19px
+}
+
+.blog-item-img img {
+    width:100%
+}
+
+.blog-list {
+    list-style:none;
+}
+
+.blog-list li {
+    display:inline-block;
+    margin-right:13px;
+    margin-left:1px
+}
+
+.blog-list li i {
+    color:#1658dd
+}
+
+.blog-title {
+    font-weight:bold;
+    margin:15px 0 8px;
+
+}
+
+.blog-desc {
+    color:#888;
+    margin-bottom:13px;
+}
+
+.blog-link {
+    color:#1658dd
+}

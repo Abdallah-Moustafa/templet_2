@@ -1,0 +1,62 @@
+/*********************** Contact Section *******************/
+.contact1 .phone {
+    width:33.3%;
+    text-align:center;
+}
+
+.contact1 .phone .icon {
+    color:#1658dd
+}
+
+.contact1 .phone h3 {
+    margin:15px 0 10px;
+}
+
+.contact1 .phone p {
+    color:#888
+}
+
+.contact2 {
+    text-align:center;
+    margin-top:50px
+}
+
+.contact2 .name-email input[type="text"] {
+    width:32.5%;
+    height:40px;
+    margin-top:20px;
+    border:0;
+    padding-left:7px;
+    font-size:18px;
+    background-color:#e8e8e8;
+    border-radius:4px;
+}
+
+.contact2 .subject-massage input[type="text"],textarea {
+    display:block;
+    width:65.5%;
+    height:40px;
+    margin:20px auto;
+    border:0;
+    padding-left:7px;
+    font-size:18px;
+    background-color:#e8e8e8;
+    border-radius:4px;
+}
+
+.contact2 .subject-massage textarea {
+    height:100px;
+    font-size:20px
+}
+
+.contact .send {
+    min-width:140px;
+    height:40px;
+    background-color:#1658dd;
+    color:#FFF;
+    margin-top:10px;
+    border-radius:4px;
+    border:0;
+    cursor:pointer;
+    font-size:16px;
+}

@@ -1,0 +1,32 @@
+/*********************** Numbers Section ***********************/
+.numbers {
+    position:relative;
+    background-image:url("../images/background/background2.webp");
+    height:300px;
+    background-size:cover;
+    background-attachment:fixed
+}
+
+.numbers-items {
+    padding:100px 0
+}
+
+.number-item {
+    width:25%;
+    text-align:center
+}
+
+.number-item .icon {
+    color:#1658dd;
+    margin-bottom: 15px;
+}
+
+.number-item-title {
+    font-weight:bold;
+    font-size:30px;
+    margin-bottom: 5px;
+    color:#fff
+}
+.number-item-text {
+    color:#FFF
+}

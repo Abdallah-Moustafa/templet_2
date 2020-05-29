@@ -1,0 +1,75 @@
+/******************** Team Section ************************/
+.team-item {
+    width:30%;
+    background:#e8e8e8;
+    padding:35px 25px;
+    text-align:center;
+}
+
+.team-item.marg {
+    margin:0 5%
+}
+
+.team-item .team-img {
+    width:90%;
+    margin:auto;
+    position:relative;
+}
+
+.team-item .team-img img {
+    width:100%;
+}
+
+.team-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:4px;
+    background:rgba(0,0,0,0.5);
+    opacity:0;
+    visibility:hidden;
+    transition: opacity 0.4s
+}
+
+.team-item:hover .team-overlay {
+    opacity:1;
+    visibility:visible
+}
+
+.team-overlay a {
+    display:block;
+    width:40px;
+    height:40px;
+    background:#1658dd;
+    color:#FFF;
+    margin-left:auto;
+    margin-top:8px;
+    border-radius:3px;
+}
+
+.team-overlay a i {
+    line-height:40px
+}
+
+.team-info .team-info-title {
+    margin:10px 0;
+    transition: color 0.5s
+}
+
+.team-info .team-info-text {
+    color:#999;
+    transition: color 0.5s
+}
+
+.team-item.ltr-effect {
+    z-index:1
+}
+
+.team-item:hover .team-info-title {
+    color:#FFF
+} 
+
+.team-item:hover .team-info-text {
+    color:#1658dd
+}

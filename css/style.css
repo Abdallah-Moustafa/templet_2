@@ -1,0 +1,306 @@
+/* 
+    1- common styles
+    2- General Styles
+    3- Section
+        3.0 Header Section
+        3.1 Home Section 
+        3.2 About Section 
+        3.3 Portfolio Section 
+        3.4 Offer Section 
+        3.5 Services Section
+        3.6 Numbers Section
+        3.7 pricing Section 
+        3.8 Testimonial Section
+        3.9 Team Section 
+        3.7 Blog page 
+        3.8 Contact Section 
+        3.9 Footer Section
+*/
+
+/********** 1- Common Styles ***********/
+/* 
+    -overlay
+    -opacity hover
+    -section header
+    -section padding
+    -hover effect 1 ( left to right )
+    -hover effect 2 ( top to bottom )
+*/
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.7)  /* rgba > Red Grean Blue Opacity */
+}
+
+.hover-opacity:hover {
+    opacity:0.7;
+}
+
+.ltr-effect , .ttb-effect {
+    position:relative
+}
+
+.ltr-effect:after, .ttb-effect::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgb(20, 20, 20);
+    z-index:-1;
+    border:0
+}
+
+.ltr-effect:after {
+    transition:width .5s;
+    width:0%;
+}
+
+.ttb-effect:after {
+    transition:height .5s;
+    height:0
+}
+
+.ltr-effect:hover:after {
+    width:100%;
+}
+
+.ttb-effect:hover:after {
+    height:100%
+}
+
+/******************* 2- General Css Stayles ****************/
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+.container {
+    width:80%;
+    margin:auto
+}
+
+body {
+    font-family: 'Varela Round', sans-serif
+}
+
+.clear {
+    clear:both
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: montserrat,sans-serif
+}
+
+button {
+    font-family:inherit
+}
+
+ul {
+    list-style:none
+}
+
+a {
+    text-decoration:none
+}
+
+.pad-y {
+    padding:120px 0 ;
+}
+
+.section-header {
+    text-align:center;
+}
+
+.section-header .section-title {
+    font-size:40px;
+    margin-bottom: 10px;
+}
+
+.section-header .line {
+    display:block;
+    height:4px;
+    width:55px;
+    background-color:#1658dd;
+    margin:0 auto 70px 
+}
+
+/***************** 3- Styles sections *******************/
+
+/* 3.0 header Section */
+.header {
+    position:fixed;
+    width:100%;
+    z-index:2;
+    background:rgba(0,0,0,0.6);
+    height:75px
+}
+
+.header .logo {
+    width:30%;
+}
+
+.header .logo img {
+    width:50%
+}
+
+.header .nav {
+    width:70%;
+    list-style:none;
+    text-align:right;
+}
+
+.header .nav > li {
+    display:inline-block
+}
+
+.header .nav > li > a {
+    color:#FFF;
+    display:block;
+    margin:30px 11px;
+    font-size: 16px;
+    transition:width 2s;
+}
+
+.header .nav > li > a:after , 
+.header .nav > li > a.active:after {
+    content:"";
+    display:block;
+    height:3.1px;
+    margin-top:1.5px;
+    background-color:#1658dd;
+    transition: width .4s
+}
+
+.header .nav > li > a:after {
+    width:0
+}
+
+.header .nav > li > a.active:after {
+    width:100%
+}
+
+.header .nav > li > a:hover:after {
+    width:100%
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-menu {
+    background-color:#1658dd;
+    width:95px;
+    position:absolute;
+    top:70%;
+    left:-35%;
+    opacity:0;
+    visibility:hidden;
+    padding:9px 1px;
+    transition:opacity 0.4s , visibility 0.4s;
+    list-style:none;
+    text-align:center
+}
+
+.dropdown-menu a {
+    color:#fff;
+    padding:10px
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity:1;
+    visibility:visible
+}
+
+/******************* Home Section ******************/
+.home {
+    height:100vh;
+    background-image:url(../images/background/background1.webp);
+    background-size:cover;
+    position:relative
+}
+
+.home-content {
+    position:absolute;
+    width:65%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center
+}
+
+.home .title {
+    color:#fff;
+    font-size:45px;
+}
+
+.home-desc {
+    margin:20px 0;
+    color:#fff;
+    font-size:15px;
+    letter-spacing: 1px;
+    line-height:20px;
+}
+
+/* button */
+.home .btn {
+    min-width:160px;
+    height:45px;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    font-size:18px
+}
+
+.home .btn-start {
+    margin:50px 10px 0 0;
+    background-color:#fff
+}
+
+.home .btn-learn {
+    background-color:#1658dd;
+    color:#fff
+}
+
+/******************* Footer Section ***********************/
+.footer {
+    background:#1c1d21;
+    text-align:center;
+    padding:40px 0 20px
+}
+
+.footer-links {
+    list-style:none;
+    margin:20px 0
+}
+
+.footer-links li {
+    display:inline-block;
+    margin:0 5px
+}
+
+.footer-links li a {
+    display:block;
+    width:45px;
+    height:45px;
+    background:#1658dd;
+    color:#FFF;
+    border-radius:50%
+}
+
+.footer-links li a i {
+    line-height:45px
+}
+
+.footer .copyright {
+    color:#999;
+    font-size:18px;
+    text-transform:uppercase;
+    margin-top:50px;
+}

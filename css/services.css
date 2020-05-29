@@ -1,0 +1,67 @@
+/*********************** Services Section *******************/
+.service {
+    background-color:#f1f1f1;
+}
+
+.service-item {
+    width:50%;
+}
+
+.service-item .section-header {
+    text-align:left;
+}
+
+.service-item .section-header .line {
+    margin-left:2px;
+    margin-bottom:30px
+}
+
+.service-item-desc {
+    padding-right:20px;
+    color:#999;
+    line-height:1.5;
+    font-size:18px;
+    margin-bottom:13px
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    margin-bottom:7px;
+    color:#999
+}
+
+.service-list li i {
+    border:1px solid #1658dd;
+    color:#1658dd;
+    padding:2px 2px;
+    border-radius:50%;
+}
+
+.service-item-img img {
+    width:100%
+}
+
+.service-bullets {
+    list-style:none;
+    text-align:center
+}
+
+.service-bullets li {
+    width:10px;
+    height:10px;
+    display:inline-block;
+    background-color:#999;
+    margin:4px; 
+    border-radius:5px;
+}
+
+.service-bullets li.active {
+    background-color:#1658dd
+}
+
+.service-bullets li:hover {
+    background-color:#1658dd
+}
